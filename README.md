@@ -10,3 +10,5 @@ Later, we'll maybe make some kind of art or science out of them.
 
 * `ingest.py`: copy screenshots from `RAW_CAPTCHA_DIR` to `INGESTED_CAPTCHA_DIR`
   while normalizing their filename.
+* `crop.py`: reading from `INGESTED_CAPTCHA_DIR`, find the box containing the
+  actual captcha, crop to those dimensions and save to `CROPPED_CAPTCHA_DIR`.
