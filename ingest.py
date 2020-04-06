@@ -23,7 +23,7 @@ def raw_captchas():
 
 
 def ingest(raw_captchas):
-    config.INGESTED_CAPTCHA_DIR.mkdir()
+    config.INGESTED_CAPTCHA_DIR.mkdir(exist_ok=True)
 
     for dt, content in raw_captchas:
         path = (config.INGESTED_CAPTCHA_DIR / dt.isoformat()).with_suffix('.png')
